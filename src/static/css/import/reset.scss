@@ -22,6 +22,9 @@ ul {
 }
 
 body {
+    font-family: "Gilroy";
+    font-weight: 400;
+    color: #BEA783;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
@@ -52,6 +55,7 @@ img {
 button {
     cursor: pointer;
     border: none;
+    color: inherit;
 }
 
 button,

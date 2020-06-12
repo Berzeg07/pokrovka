@@ -8,6 +8,15 @@
 }
 
 @font-face {
+    font-family: "BebasNeue";
+    src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot");
+    src: local('☺'), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format('woff'), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format('truetype');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular/Gilroy-Regular.eot");
   src: local("☺"), url("../fonts/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype");
@@ -76,5 +85,14 @@
   src: local("☺"), url("../fonts/SFProDisplay-Light/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light/SFProDisplay-Light.ttf") format("truetype");
   font-display: swap;
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Ultralight/SFProDisplay-Ultralight.eot");
+  src: local("☺"), url("../fonts/SFProDisplay-Ultralight/SFProDisplay-Ultralight.woff") format("woff"), url("../fonts/SFProDisplay-Ultralight/SFProDisplay-Ultralight.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 200;
   font-style: normal;
 }
