@@ -23,7 +23,6 @@ $(document).ready(function(){
 
 var swiperApps1 = new Swiper('.appartaments-tab1', {
 	slidesPerView: 1.29,
-	slidesPerView: 1,
 	spaceBetween: 10,
 	loop: true,
 	pagination: {
