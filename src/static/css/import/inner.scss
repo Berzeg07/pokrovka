@@ -463,6 +463,141 @@
 	font-size: 14px;
 }
 
+/*Apartments*/
+.appartaments {
+	background-color: #0F131C;
+
+	padding-bottom: 60px;
+
+	font-family: "SFProDisplay";
+	font-weight: 300;
+
+	@media (min-width : 1200px) {
+		padding-bottom: 32px;
+	}
+}
+
+.appartaments-img {
+	img {
+		width: 100%;
+
+		@media (min-width : 992px) {
+			height: 470px;
+		}
+
+		@media (min-width : 1200px) {
+			height: 580px;
+		}
+
+		@media (min-width : 1600px) {
+			height: 880px;
+		}
+	}
+
+}
+
+.appartaments .appartaments-tab1 {
+	margin-bottom: 27px;
+
+	@media (min-width : 1600px) {
+		margin-bottom: 0;
+	}
+}
+
+.appartaments .swiper-pagination {
+	font-size: 22px;
+	color: #C8A879;
+}
+
+.appartaments .swiper-pagination-bullet {
+	background: none;
+	opacity: 1;
+
+	width: auto;
+	height: auto;
+}
+
+.appartaments .swiper-button-next {
+	background-image: url('../img/arrow-app-r.png');
+	background-size: contain;
+	width: 35px;
+	height: 35px;
+}
+
+.appartaments .swiper-button-prev {
+	background-image: url('../img/arrow-app-l.png');
+	background-size: contain;
+	width: 35px;
+	height: 35px;
+}
+
+.appartaments .nav-block {
+	position: relative;
+
+	max-width: 160px;
+	margin: 0 auto;
+	margin-top: 15px;
+	height: 35px;
+
+	justify-content: center;
+	display: flex;
+
+	@media (min-width : 1200px) {
+		margin-top: 32px;
+	}
+
+	@media (min-width : 1600px) {
+		position: relative;
+		z-index: 3;
+	}
+}
+
+.appartaments-tab {
+	@media (min-width : 1600px) {
+		margin-top: -32px;
+		position: relative;
+		z-index: 2;
+		width: 710px;
+	}
+}
+
+.appartaments-tab ul {
+	display: flex;
+	padding: 0 29px;
+	overflow-x: scroll;
+
+	@media (min-width : 768px) {
+		overflow-x: hidden;
+	}
+}
+
+.appartaments-tab li {
+	margin-right: 50px;
+
+	&:last-child {
+		margin-right: 0;
+
+		a {
+			width: 320px;
+		}
+	}
+}
+
+.appartaments-tab a {
+	color: rgba(185, 152, 102, 0.62);
+	font-size: 22px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.appartaments-tab .active span {
+	color: #FFDAA1;
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(185, 152, 102, 0.62);
+}
+
+
 /*Offer
 ==============================================================*/
 .offer {
