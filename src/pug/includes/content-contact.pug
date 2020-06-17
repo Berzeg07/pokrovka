@@ -1,0 +1,46 @@
+.contact-page
+    h1.main-title.contact-page__title Контакты
+    
+    .map-wrap
+        ul.contact-item.contact-item_top
+            li
+                span Адрес
+                p.contact-adress Москва, ул. Покровка, 43, стр 8
+            li
+                span Телефон:
+                a(href="#tel:74952719500").company-phone.company-phone_icon +7 (495) 271-95-00
+            li
+                span E-mail:
+                a(href="mailto:info@buonapart.ru").email-link info@buonapart.ru
+                
+        .map.map-contact
+            .map__block
+                span.map__baloon
+                    img(src="img/baloon.png" alt="Дом на парковке")
+
+                span.map__market Центральный <br> рынок
+                span.map__metro Метро <br>чистые пруды
+                span.map__square Московский <br>кремль
+                span.map__street ул. Покровка
+        
+        .contact-item.contact-item_bottom
+            <form class="main-form main-form_contact">
+                <h2 class="main-form__caption level-selection__caption">Обратная связь</h2>
+
+                <label aria-label="Ваше имя">
+                    <input class="main-form__input-text level-selection____input-text" type="text" placeholder="Ваше имя">
+                </label>
+
+                <label aria-label="Контактный телефон">
+                    <input class="main-form__input-text level-selection____input-text" type="text" placeholder="Контактный телефон">
+                </label>
+
+                <label aria-label="Комментарий" class="offer-form__label">
+                    <input class="main-form__input-text level-selection____input-text" type="text" placeholder="Комментарий">
+                </label>
+
+                <input class="main-form__input-checkbox" id="main-form__input-checkbox2" type="checkbox" checked>
+                <label class="main-form__agree level-selection-block__agree" for="main-form__input-checkbox2">Согласен на обработку персональных <br> данных</label>
+
+                <button class="btn btn_orange main-form__submit" type="submit">Записаться на просмотр</button>
+            </form>
