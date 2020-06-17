@@ -9,6 +9,17 @@ $(document).ready(function(){
 	});
 	$('.level-selection-tab li:first').click();
 
+	$('.single-tab li').click(function(e) {
+		e.preventDefault();
+		$('li').removeClass('single-item-active');
+		$(this).addClass('single-item-active');
+		var tab = $(this).attr('data-num');
+		$('.single-column-tab__box').not(tab).css({'display':'none'});
+		$(tab).fadeIn(400);
+	});
+
+	$('.single-tab li:first').click();
+
 	$('.appartaments-tab a').click(function(e) {
 		e.preventDefault();
 		$('a').removeClass('active');
