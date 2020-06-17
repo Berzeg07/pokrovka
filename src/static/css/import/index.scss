@@ -151,6 +151,12 @@
         font-size: 24px;
         line-height: 28px;
     }
+
+    .company-phone {
+        font-size: 24px;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
 }
 
 .dropdown-menu {
@@ -780,7 +786,8 @@
 
 .flat-info {
     position: relative;
-    img{
+
+    img {
         display: block;
     }
 
@@ -1108,4 +1115,149 @@
 
 .hide {
     display: none;
+}
+
+.contact-item {
+    background: rgba(15, 19, 28, 0.8);
+    @media(min-width: 1200px){
+        width: 480px;
+    }
+}
+
+.contact-item_top {
+    padding: 19px 16px;
+    @media(min-width: 1200px){
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 50%;
+    }
+
+    span {
+        display: block;
+        color: rgba(180, 152, 122, 0.5);
+        font-size: 20px;
+        margin-bottom: 19px;
+        padding-left: 34px;
+    }
+
+    li {
+        margin-bottom: 40px;
+    }
+}
+
+.contact-adress {
+    font-family: "SFProDisplay";
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 34px;
+    color: #B4987A;
+    @media(max-width: 991px) {
+        font-size: 18px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background: url("../img/near.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+.company-phone_icon {
+    position: relative;
+    display: inline-block;
+    color: #B4987A;
+    padding-left: 34px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 24px;
+        height: 24px;
+        background: url("../img/call-icon.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+.email-link {
+    position: relative;
+    display: inline-block;
+    color: #B4987A;
+    margin-left: 34px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(180, 152, 122, 0.5);
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: -37px;
+        top: -3px;
+        width: 24px;
+        height: 24px;
+        background: url("../img/email-icon.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+.main-form.main-form_contact {
+    padding: 30px 24px;
+    max-width: 432px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media(min-width: 1280px) {
+        padding: 35px 42px;
+    }
+
+    .level-selection____input-text {
+        margin-bottom: 40px;
+    }
+
+    label:nth-child(4) .main-form__input-text {
+        margin-bottom: 55px;
+    }
+}
+
+.map-wrap {
+    background: #22252C;
+    position: relative;
+}
+
+.contact-page {
+    background: #0F131C;
+}
+
+.contact-item_bottom {
+    @media(min-width: 500px) and (max-width: 1099px) {
+        padding: 35px 0;
+    }
+    @media(min-width: 1100px) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 60%;
+    }
+}
+
+.map.map-contact{
+    @media(min-width: 1100px) and (max-width: 1199px){
+        height: 518px;
+    }
+}
+
+.contact-page__title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-top: 25px;
+    @media(min-width: 1100px) {
+        display: none;
+    }
 }
