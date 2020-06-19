@@ -1205,11 +1205,64 @@
 	}
 
 	.single-first-level3 .div-block span {
+		&:nth-child(1) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: 20px;
+				top: -5px;
+			}
+		}
+
+		&:nth-child(2) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: 13px;
+				top: -5px;
+			}
+		}
+
+		&:nth-child(3) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: -50px;
+				top: -5px;
+			}
+		}
+		&:nth-child(4) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: -27px;
+				top: -5px;
+			}
+		}
+
 		&:nth-child(5) {
 			@media (min-width : 1280px) and (max-width: 1919px) {
 				position: relative;
 				left: 28px;
 
+			}
+		}
+
+		&:nth-child(6) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: 0px;
+
+			}
+		}
+
+		&:nth-child(7) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: -30px;
+			}
+		}
+
+		&:nth-child(8) {
+			@media (min-width : 1280px) and (max-width: 1919px) {
+				position: relative;
+				left: -60px;
 			}
 		}
 	}
