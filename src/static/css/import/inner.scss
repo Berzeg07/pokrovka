@@ -1075,21 +1075,6 @@
 		overflow-x: hidden;
 	}
 
-	.single-first-level {
-		overflow-x: scroll;
-		max-width: 1220px;
-		margin: 0 auto;
-		position: relative;
-
-		@media (min-width : 1200px) {
-
-		}
-
-		@media (min-width : 1920px) {
-			max-width: 1750px;
-		}
-	}
-
 
 
 	/* хром, сафари */
@@ -1101,10 +1086,21 @@
 	/* фф (свойство больше не работает, других способов тоже нет)*/
 	.single-first-level { overflow: -moz-scrollbars-none; }
 
+	.single-first-level {
+		overflow-x: scroll;
+		max-width: 1220px;
+		margin: 0 auto;
+		position: relative;
+
+		@media (min-width : 1920px) {
+			max-width: 1750px;
+		}
+	}
 
 	.single-first-level img {
 		height: 490px;
 		max-width: none;
+
 
 		@media (min-width : 1920px) {
 			height: 703px;
@@ -1122,6 +1118,11 @@
 	.single-first-level2 img {
 		height: 490px;
 
+		@media (min-width : 1280px) {
+			height: auto;
+			width: 100%;
+		}
+
 		@media (min-width : 1920px) {
 			height: 610px;
 		}
@@ -1129,6 +1130,13 @@
 
 	.single-first-level3 {
 		max-width: 1405px;
+
+		img {
+			@media (min-width : 1280px) {
+				height: auto;
+				width: 100%;
+			}
+		}
 
 		@media (min-width : 1920px) {
 			max-width: 1750px;
@@ -1144,6 +1152,10 @@
 
 		img {
 			height: 490px;
+			@media (min-width : 1280px) {
+				height: auto;
+				width: 100%;
+			}
 		}
 
 		@media (min-width : 1920px) {
@@ -1155,6 +1167,19 @@
 		}
 	}
 
+	.div-block {
+		@media (min-width : 1280px) and (max-width: 1919px){
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+
 
 	.single-btn {
 		position: absolute;
@@ -1163,11 +1188,41 @@
 		justify-content: center;
 		align-items: center;
 		transition: 1s all;
+		/*outline: 1px solid red;*/
 
 
 		a {
 			width: 150px;
 			opacity: 0;
+		}
+	}
+
+	.single-first-level2 .div-block, .single-first-level4 .div-block {
+		@media (min-width : 1280px) and (max-width: 1919px){
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.single-column-tab__box .single-first-level2 .single-btn {
+		@media (min-width : 1280px) and (max-width: 1919px){
+			position: static;
+			width: 23%;
+			height: 50%;
+		}
+	}
+
+	.div .single-first-level3 .single-btn {
+		@media (min-width : 1280px) and (max-width: 1919px){
+			position: static;
+			width: 21%;
+		}
+	}
+
+	.div .single-first-level4 .single-btn {
+		@media (min-width : 1280px) and (max-width: 1919px){
+			position: static;
+			width: 23%;
 		}
 	}
 
@@ -1212,6 +1267,12 @@
 		left: 87px;
 		width: 210px;
 		height: 220px;
+
+		/*@media (min-width : 1280px) and (max-width: 1919px){
+			position: relative;
+			top: 2px;
+			left: 19px;
+		}*/
 
 		@media (min-width : 1920px) {
 			top: 19px;
@@ -1533,14 +1594,13 @@
 
 	.single-first-level4 .single-btn_seven {
 		top: 30px;
-		left: auto;
-		right: 58px;
+		left: 1054px;
 		width: 318px;
 		height: 435px;
 
 		@media (min-width : 1920px) {
 			top: 37px;
-			right: 64px;
+			left: 1285px;
 			width: 400px;
 			height: 532px;
 		}
@@ -1548,10 +1608,9 @@
 
 	.single-first-level3 .single-btn_seven {
 		top: 17px;
-		right: 84px;
 		width: 254px;
 		height: 216px;
-		left: auto;
+		left: 1065px;
 
 		@media (min-width : 1920px) {
 			top: 17px;
@@ -1565,10 +1624,9 @@
 
 	.single-first-level2 .single-btn_seven{
 		top: 59px;
-		right: 94px;
 		width: 238px;
 		height: 167px;
-		left: auto;
+		left: 1075px;
 
 		@media (min-width : 1920px) {
 			top: 31px;
@@ -1605,10 +1663,9 @@
 
 	.single-first-level3 .single-btn_eight {
 		bottom: 17px;
-		right: 84px;
 		width: 313px;
 		height: 234px;
-		left: auto;
+		left: 1008px;
 
 		@media (min-width : 1920px) {
 			bottom: 17px;
@@ -1622,10 +1679,9 @@
 
 	.single-first-level2 .single-btn_eight{
 		bottom: 56px;
-		right: 111px;
-		width: 284px;
+		width: 300px;
 		height: 192px;
-		left: auto;
+		left: 1015px;
 
 		@media (min-width : 1920px) {
 			bottom: 56px;
