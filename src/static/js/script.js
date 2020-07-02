@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $('.header-main').addClass('scale-animate');
+
     $('.flat-info__btn').click(function() {
         var $this = $(this);
         $('.flat-info__front, .flat-info__back').removeAttr('style');
