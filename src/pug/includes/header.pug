@@ -4,9 +4,10 @@
             button(type="button").burger
             .logo.logo_header
                 img(src="img/main-logo.png")
-            p.company-name.company-name_desc 
-                span Дом на покровке<br> 
-                |быть в центре
+            .company-name.company-name_desc 
+                p
+                    span Дом на покровке<br> 
+                    |быть в центре
                 
         .header__item
             ul.company-info
@@ -23,7 +24,11 @@
         li
             a(href="#tel:74952719500").company-phone +7 (495) 271-95-00
         li
-            p.company-name Дом на покровке<br> быть в центре
+            .logo
+                img(src="img/main-logo.png")
+        li
+            .company-name.company-name_mob 
+                p Дом на покровке<br> быть в центре
 
 .dropdown-menu
     ul.dropdown-menu__links

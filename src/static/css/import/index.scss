@@ -18,6 +18,9 @@
         width: 100%;
         z-index: 100;
     }
+    @media(min-width: 1100px) {
+        align-items: flex-start;
+    }
 }
 
 .header-main {
@@ -52,6 +55,7 @@
         &:first-child {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
         }
     }
     .burger {
@@ -1266,7 +1270,7 @@
     }
 }
 
-.logo {
+.logo_header {
     margin-right: 30px;
     @media(max-width: 1099px) {
         display: none;
@@ -1281,8 +1285,21 @@
 
 .company-name_desc {
     @media(min-width: 1100px) {
-        span {
-            display: none;
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 90px;
+        p {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 24px;
+            display: inline-block;
         }
+    }
+}
+
+.company-name_mob {
+    p {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 24px;
+        display: inline-block;
     }
 }
