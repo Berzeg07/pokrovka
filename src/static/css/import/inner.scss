@@ -909,15 +909,10 @@
 .map2 {
 	height: 472px;
 
-	background-image: url('../img/map-min.jpg');
-	background-position: 0 0;
+	background-image: url('../img/map2.jpg');
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-	@media (min-width : 400px) {
-		background-image: url('../img/map.jpg');
-		background-position: center;
-	}
 
 	@media (min-width : 1200px) {
 		height: 898px;
@@ -931,7 +926,7 @@
 }
 
 .map__block2 {
-	max-width: 400px;
+	max-width: 320px;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -942,11 +937,14 @@
 		&:nth-child(3),
 		&:nth-child(4),
 		&:nth-child(5),
-		&:nth-child(6) {
+		&:nth-child(6),
+		&:nth-child(7),
+		&:nth-child(8),
+		&:nth-child(9), {
 			position: absolute;
 			top: 0;
 			right: 0;
-			font-size: 12px;
+			font-size: 16px;
 			display: none;
 
 			&::before {
@@ -973,9 +971,9 @@
 		@media (min-width : 1200px) {
 			&:nth-child(2) {
 
-				top: 295px;
-				right: 198px;
 
+				top: 364px;
+				right: 417px;
 
 
 				&::before {
@@ -984,8 +982,8 @@
 			}
 
 			&:nth-child(3) {
-				top: 294px;
-				right: 91px;
+				top: 101px;
+				right: -531px;
 
 
 				&::before {
@@ -994,8 +992,8 @@
 			}
 
 			&:nth-child(4) {
-				top: 370px;
-				right: 128px;
+				top: 464px;
+				right: 362px;
 
 
 				&::before {
@@ -1004,8 +1002,8 @@
 			}
 
 			&:nth-child(5) {
-				top: 348px;
-				right: 5px;
+				top: 154px;
+				right: -42px;
 
 
 				&::before {
@@ -1014,13 +1012,34 @@
 			}
 
 			&:nth-child(6) {
-				top: 271px;
-				right: -5px;
+				top: 548px;
+				right: 260px;
 
 
 				&::before {
 					background-image: url("../img/spa.png");
 				}
+			}
+
+			&:nth-child(7) {
+				top: 379px;
+				transform: rotate(66deg);
+				right: 378px;
+				font-size: 14px;
+			}
+
+			&:nth-child(8) {
+				top: 252px;
+				transform: rotate(-42deg);
+				right: 109px;
+				font-size: 14px;
+			}
+
+			&:nth-child(9) {
+				top: 252px;
+				transform: rotate(78deg);
+				right: -130px;
+				font-size: 14px;
 			}
 		}
 
@@ -1032,37 +1051,22 @@
 }
 
 .map__baloon2 {
-	width: 146px;
-	height: 186px;
 
-
+	width: 100px;
+	height: auto;
 	position: absolute;
 	right: 2%;
-	top: 12%;
+	top: 0%;
 
-	@media (min-width : 350px) {
-		top: 14%;
-	}
-
-	@media (min-width : 370px) {
-		right: 4%;
-	}
-
-	@media (min-width : 400px) {
-		top: 6%;
-		right: 5%;
-	}
-
-	@media (min-width : 1100px) {
-		top: 4%;
-		right: 2%;
-	}
+	width: 100px;
 
 	@media (min-width : 1200px) {
-		top: 5%;
-		right: 5%;
-	}
+		width: 146px;
+		height: 201px;
 
+		right: 7%;
+		top: 2%;
+	}
 }
 
 /*Single
